@@ -8,7 +8,7 @@ public class llamarUsuario implements Estrategia{
     }
 
     @Override
-    public void actuar(Viaje viaje) {
+    public void ejecutarEstrategia(Viaje viaje) {
 
     }
 }
