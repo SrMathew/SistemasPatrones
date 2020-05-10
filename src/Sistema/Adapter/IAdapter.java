@@ -1,4 +1,7 @@
-package Sistema.Adapter;
+package com.company;
 
 public interface IAdapter {
+
+    public int obtenerDistancia();
+
 }
