@@ -10,7 +10,7 @@ public class EsperarMinutos implements Estrategia {
         this.minutos = min;
     }
     @Override
-    public void actuar(Viaje viaje) {
+    public void ejecutarEstrategia(Viaje viaje) {
         //codigo
     }
 }
