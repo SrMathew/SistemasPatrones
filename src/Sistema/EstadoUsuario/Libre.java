@@ -3,6 +3,7 @@ package Sistema.EstadoUsuario;
 import Sistema.Usuario;
 
 public class Libre implements EstadoUsuario{
+
     @Override
     public void liberar(Usuario usuario) {
         //nada

@@ -1,4 +1,4 @@
-package com.company;
+package Sistema.Adapter;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -7,7 +7,7 @@ import java.net.URLConnection;
 import java.util.Scanner;
 import org.json.*;
 
-public class AdapterConcreto implements IAdapter{
+public class AdapterConcreto implements Adapter{
 
     private static final String BASE_URL = "https://maps.googleapis.com/maps/api";
     private static final String API_KEY = "AIzaSyBV7t8enRB7UmFmo13ddNReMUQjVZadKc4";
