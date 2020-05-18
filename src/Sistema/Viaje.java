@@ -17,30 +17,61 @@ public class Viaje implements IObservable{
     private Estrategia estrategia;
 
     //metodos
+
     public void agregarCuidador(){}
+
     public void eliminarCuidador(){}
 
     @Override
     public void agrearCuidador(IObserver observador) {
         this.cuidadores.add(observador);
     }
+
     @Override
     public void eliminarCuidador(IObserver observador) {
         this.cuidadores.remove(observador);
     }
+
     @Override
     public void notificarCuidadores(){
-        this.cuidadores.forEach(o -> o.serNotificadoPor(this));
+        /*
+         *  for(int i = 0 ; i < this.cuidadores.size() ; i++){
+         *      this.cuidadores.get(i).serNotificadoPor(this);
+         *  }
+        */
+        //this.cuidadores.forEach(o -> o.serNotificadoPor(this));
     }
+
     public void estadoContexto(){}
-    public void cambiarEstado(EstadoViaje estado){}
-    public EstadoViaje obtenerEstado(){
-        return this.estado;
+
+    public void cambiarEstado(EstadoViaje estado){
+        this.setEstado(estado);
     }
-    public void ejecutarEstrategia(){}
+
+    public EstadoViaje getEstado() {
+        return estado;
+    }
+
+    public void setEstado(EstadoViaje estado) {
+        this.estado = estado;
+    }
+
+    public String ejecutarEstrategia(){
+        return this.getEstrategia().ejecutarEstrategia(this);
+    }
+
+    public void cambiarEstrategia(Estrategia estrategia){
+        setEstrategia(estrategia);
+    }
+
     public void setEstrategia(Estrategia estrategia){
         this.estrategia = estrategia;
     }
-    public void distancia(){}
+
+    public Estrategia getEstrategia() {
+        return estrategia;
+    }
+
+    public void distancia(){ }
 
 }

@@ -7,7 +7,8 @@ public class AlertarCuidadores implements Estrategia{
 
     }
     @Override
-    public void ejecutarEstrategia(Viaje viaje) {
+    public String ejecutarEstrategia(Viaje viaje) {
         viaje.notificarCuidadores();
+        return "notificar a cuidadores";
     }
 }
