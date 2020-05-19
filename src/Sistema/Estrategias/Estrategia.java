@@ -3,6 +3,6 @@ import Sistema.Viaje;
 
 public interface Estrategia {
 
-    public void ejecutarEstrategia(Viaje viaje);
+    public String ejecutarEstrategia(Viaje viaje);
 
 }

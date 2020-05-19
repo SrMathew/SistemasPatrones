@@ -7,7 +7,7 @@ public class llamarPolicia implements Estrategia{
 
     }
     @Override
-    public void ejecutarEstrategia(Viaje viaje) {
-
+    public String ejecutarEstrategia(Viaje viaje) {
+        return "llamar a policia";
     }
 }
